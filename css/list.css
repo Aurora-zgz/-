@@ -1,0 +1,124 @@
+/* 列表样式 */
+.nav {
+    overflow: hidden;
+}
+.sk {
+    position: absolute;
+    left: 190px;
+    top: 40px;
+    border-left: 1px solid #c81523;
+    padding: 3px 0 0 14px;
+}
+.sk_list {
+    float: left;
+}
+.sk_list ul li {
+    float: left;
+}
+.sk_list ul li a {
+    font-size: 16px;
+    /* 这里高度已经在nav中设置好了 */
+    line-height: 47px;
+    padding: 0 30px;
+    font-weight: 700;
+    color: #000;
+}
+.sk_con {
+    float: left;
+}
+.sk_con ul li {
+    float: left;
+}
+.sk_con ul li a {
+    font-size: 14px;
+    /* 字体稍微中间靠下 大于字体 */
+    line-height: 49px;
+    padding: 0 23px;
+}
+.sk_con ul li:last-child a::after {
+    font-family: 'icomoon';
+    content: "\e900";
+}
+/* 手机模块 */
+body {
+    background-color: #f5f5f5;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+/* 清楚子盒子浮动带来的影响 */
+.sk_container {
+    overflow: hidden;
+}
+.bd_left {
+    float: left;
+    width: 234px;
+    background-color: pink;
+}
+.bd_left:hover {
+    /* 盒子阴影 */
+    box-shadow: 10px 10px 10px -4px rgba(0,0,0,.3);
+}
+.bd_right {
+    float: left;
+    width: 966px;
+    /* background-color: #fff; */
+}
+.box {
+    float: left;
+    height: 260px;
+    width: 210px;
+    background-color: #ffffff;
+    margin: 0 0 15px 15px;
+    text-align: center;
+    
+}
+/* 原先盒子没有影子，鼠标经过出现阴影 */
+.box:hover {
+     /* 盒子阴影 */
+     box-shadow: 10px 10px 10px -4px rgba(0,0,0,.3);
+}
+.review {
+    font-size: 14px;
+    height: 20px;
+}
+
+.dec {
+    font-size: 10px;
+    margin-top: 5px;
+    padding: 0 5px;
+    color: #cdcdcd;
+}
+
+.appraise {
+    font-size: 10px;
+    padding: 0 10px;
+    text-align: left;
+    margin-top: 5px;
+    color: #cdcdcd;
+}
+
+.info {
+    font-size: 12px;
+    padding: 0 10px;
+    margin-top: 5px;
+    /* text-align: left; */
+}
+
+.info h5 {
+    display: inline-block;
+    font-weight: 400;
+}
+
+.fuhao {
+    margin-left: 8px;
+    color: #cdcdcd;
+}
+
+.price {
+    margin-left: 2px;
+    color: #ff7212;
+
+}

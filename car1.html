@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+    <link rel="stylesheet" type="text/css" href="css/car1.css" />
+    <script type="text/javascript" src="js/car1.js"></script>
+</head>
+
+<body>
+    <span class="tital_pic">
+        <a href="index.html"><img src="images/logo.png"></a>
+    </span>
+    <div class="car">
+        <div class="car_top">
+            <div class="selectAll">
+                <input type="checkbox" name="car_checkbox" onclick="checkAll(this)">全选
+            </div>
+            <div class="th_item">
+                <div class="td_inner">商品信息</div>
+            </div>
+            <div class="th_info">
+                <div class="td_inner"></div>
+            </div>
+            <div class="th_price">
+                <div class="td_inner">单价</div>
+            </div>
+            <div class="th_amount">
+                <div class="td_inner">数量</div>
+            </div>
+            <div class="th_sum">
+                <div class="td_inner">金额</div>
+            </div>
+            <div class="th_op">
+                <div class="td_inner">操作</div>
+            </div>
+        </div>
+
+        <div class="shop1">
+            <div class="shop_top">
+                <input type="checkbox" onclick="someAll1(this)" name="shop1_checkboxAll">店铺：<a href="#">新百伦官方企业店</a>
+            </div>
+            <div class="shop_body">
+                <div class="shop_checkbox">
+                    <input type="checkbox" onclick="checkSel(this)" name="shop1_checkbox">
+                </div>
+                <div class="shop_dec">
+                    <img
+                        src="https://img.alicdn.com/bao/uploaded/i2/1837734866/O1CN01OM7Yu61lofrOTvl8S_!!1837734866.jpg_80x80.jpg">
+                    <div class="shop_dec_words"><a href="#">新百伦NEW BOLUNE椰子鞋女正品官网350V2运动鞋男鞋满天星夏季380</a></div>
+                </div>
+                <div class="shop_information">
+                    <p>鞋码：42</p>
+                    <p>颜色分类：黑泼墨[380男款]</p>
+                </div>
+                <div class="shop_price">
+                    <em class="price_original">￥599.00</em>
+                    <em class="price_now">￥238.00</em>
+                </div>
+                <div class="shop_num">
+                    <button onclick="calc(this)">-</button>
+                    <span>1</span>
+                    <button onclick="calc(this)">+</button>
+                </div>
+                <div class="shop_price_red">
+                    <em class="shop_total">￥238.00</em>
+                </div>
+                <div class="shop_tail">
+                    <a href="#">移入收藏夹</a>
+                    <a href="#" onclick="deleteShop(this),deleteDiv(this)">删除</a>
+                </div>
+            </div>
+
+
+            <div class="shop_body">
+                <div class="shop_checkbox">
+                    <input type="checkbox" onclick="checkSel(this)" name="shop1_checkbox">
+                </div>
+                <div class="shop_dec">
+                    <img
+                        src="https://img.alicdn.com/bao/uploaded/i4/1837734866/O1CN01eudeqn1lofrpVjVnp_!!1837734866.jpg_80x80.jpg">
+                    <div class="shop_dec_words"><a href="#">新百伦530系列白银春夏季nb老爹鞋女鞋男鞋运动鞋旗舰店官方正品</a></div>
+                </div>
+                <div class="shop_information">
+                    <p>鞋码：42</p>
+                    <p>颜色分类：白银[男 白深蓝]</p>
+                </div>
+                <div class="shop_price">
+                    <em class="price_original">￥599.00</em>
+                    <em class="price_now">￥228.00</em>
+                </div>
+                <div class="shop_num">
+                    <button onclick="calc(this)">-</button>
+                    <span>1</span>
+                    <button onclick="calc(this)">+</button>
+                </div>
+                <div class="shop_price_red">
+                    <em class="shop_total">￥228.00</em>
+                </div>
+                <div class="shop_tail">
+                    <a href="#">移入收藏夹</a>
+                    <a href="#" onclick="deleteShop(this),deleteDiv(this)">删除</a>
+                </div>
+            </div>
+
+
+
+
+            <div class="shop_body">
+                <div class="shop_checkbox">
+                    <input type="checkbox" onclick="checkSel(this)" name="shop1_checkbox">
+                </div>
+                <div class="shop_dec">
+                    <img
+                        src="https://img.alicdn.com/bao/uploaded/i1/1837734866/O1CN01Mg59Mx1lofpo4F8uZ_!!1837734866.jpg_80x80.jpg">
+                    <div class="shop_dec_words"><a href="#">新百伦旗舰店官方正品运动鞋女鞋男鞋子2021新款春夏季休闲跑鞋</a></div>
+                </div>
+                <div class="shop_information">
+                    <p>鞋码：42</p>
+                    <p>颜色分类：米白色 男</p>
+                </div>
+                <div class="shop_price">
+                    <em class="price_original">￥699.00</em>
+                    <em class="price_now">￥168.00</em>
+                </div>
+                <div class="shop_num">
+                    <button onclick="calc(this)">-</button>
+                    <span>1</span>
+                    <button onclick="calc(this)">+</button>
+                </div>
+                <div class="shop_price_red">
+                    <em class="shop_total">￥168.00</em>
+                </div>
+                <div class="shop_tail">
+                    <a href="#">移入收藏夹</a>
+                    <a href="#" onclick="deleteShop(this),deleteDiv(this)">删除</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="shop2">
+            <div class="shop_top">
+                <input type="checkbox" name="shop2_checkboxAll" onclick="someAll2(this)">店铺：<a href="#">酷派正品男装</a>
+            </div>
+            <div class="shop_body">
+                <div class="shop_checkbox">
+                    <input type="checkbox" name="shop2_checkbox" onclick="checkSel(this)">
+                </div>
+                <div class="shop_dec">
+                    <img
+                        src="https://img.alicdn.com/bao/uploaded/i3/2023068092/O1CN01lsABey29eBbR0m2MM_!!2023068092.jpg_80x80.jpg">
+                    <div class="shop_dec_words"><a href="#">花花公子2020新款冬季青少年棉衣男潮流棉袄加厚羽绒服学生外套</a></div>
+                </div>
+                <div class="shop_information">
+                    <p>颜色：蓝色8835款</p>
+                    <p>尺码：XL</p>
+                </div>
+                <div class="shop_price">
+                    <em class="price_original">￥498.00</em>
+                    <em class="price_now">￥148.00</em>
+                </div>
+                <div class="shop_num">
+                    <button onclick="calc(this)">-</button>
+                    <span id="span_id">1</span>
+                    <button onclick="calc(this)">+</button>
+                </div>
+                <div class="shop_price_red">
+                    <em class="shop_total">￥148.00</em>
+                </div>
+                <div class="shop_tail">
+                    <a href="#">移入收藏夹</a>
+                    <a href="#" onclick="deleteShop(this),deleteDiv(this)">删除</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="shop_bottom">
+            <div class="selectAll">
+                <input type="checkbox" name="car_checkbox" onclick="checkAll(this)">全选
+            </div>
+            <a href="#" onclick="deleteAllShop()">删除</a>
+            <a href="#">清除失效宝贝</a>
+            <a href="#">移入收藏夹</a>
+            <a href="#">分享</a>
+            <div class="div_right">
+                <span class="txt1">已选商品</span>
+                <strong>
+                    <em class="number">0</em>
+                </strong>
+                <span class="txt2">件</span>
+                <span class="txt3">合计（不含运费）:</span>
+                <em class="price">￥0.00</em>
+                <span class="end">
+                    <p class="set">结算</p>
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,288 @@
+/* Author:翟刚正
+date:2021.3.15 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+}
+
+.tital_pic {
+    width: 1190px;
+    height: 45px;
+    display: block;
+    margin: 20px auto;
+}
+
+.car {
+    width: 1190px;
+    height: auto;
+    margin: 0px auto;
+}
+
+.car_top,.shop_bottom {
+    width: 1190px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.selectAll,
+.th_item,
+.th_info,
+.th_price,
+.th_amount,
+.th_sum,
+.th_op {
+    display: inline-block;
+    height: 50px;
+}
+
+.selectAll {
+    width: 80px;
+    padding-left: 10px;
+}
+
+.th_item {
+    width: 251px;
+    padding-left: 91px;
+}
+
+.th_info {
+    width: 202px;
+    padding-left: 10px;
+}
+
+.th_price {
+    width: 120px;
+    padding-left: 0;
+}
+
+.th_amount {
+    width: 110px;
+    padding-left: 15px;
+}
+
+.th_sum {
+    width: 140px;
+}
+
+.th_op {
+    width: 119px;
+}
+
+.shop1,
+.shop2 {
+    width: 1190px;
+    height: auto;
+    margin: 0px auto;
+
+}
+
+.shop_top {
+    height: 38px;
+    margin: 25px 0 0 10px;
+}
+
+.shop_top a {
+    line-height: 38px;
+}
+
+a {
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff4400;
+    text-decoration: underline;
+}
+
+.shop_body {
+    height: 130px;
+    background-color: #fcfcfc;
+    border: 1px solid #cccccc;
+   /* border-collapse: collapse; */
+}
+
+.shop_checkbox {
+
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin: 20px 0px 0px 25px;
+    vertical-align: top;
+}
+
+.shop_dec {
+    width: 342px;
+    height: 110px;
+    display: inline-block;
+    margin: 20px 0px 0px 10px;
+
+}
+
+.shop_dec_words {
+    width: 250px;
+    height: 110px;
+    font-size: 14px;
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.shop_information {
+    width: 210px;
+    height: 84px;
+    padding: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+p {
+    font-size: 13px;
+    color: #9c9c9c;
+}
+
+.shop_price {
+    width: 130px;
+    height: 42px;
+    font: 12px Verdana, Tahoma, arial;
+    padding-top: 16px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.shop_price .price_original {
+    color: #9c9c9c;
+    font-style: normal;
+    text-decoration: line-through;
+    display: block;
+}
+
+.shop_price .price_now {
+    color: #131212;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.shop_num {
+    width: 120px;
+    height: 25px;
+    padding-top: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.shop_num button {
+    width: 19px;
+    height: 22px;
+    display: inline-block;
+    line-height: 22px;
+}
+
+.shop_num span {
+    display: inline-block;
+    width: 42px;
+    height: 22px;
+    border: 1px solid #aaa;
+    text-align: center;
+}
+
+.shop_price_red {
+    width: 140px;
+    height: 19px;
+    padding-top: 16px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.shop_price_red em {
+    color: #f40;
+    font-size: 12px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.shop_tail {
+    width: 119px;
+    height: 42px;
+    padding-top: 17px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.shop_tail a {
+    display: block;
+}
+
+.shop_bottom {
+    background-color: #e5e5e5;
+    margin-top: 20px;
+}
+.shop_bottom a {
+    padding-left: 25px;
+}
+.div_right {
+    /* 定位  */
+    float: right;
+    /* 不指定位置 会出现价格变动 页面样式会改变 */
+    position: 758.234;
+    /* display: inline-block; */
+    right: 0;
+    top: 0;
+    z-index: 4;
+    padding-left: 20px;
+
+}
+.shop_bottom .txt1 {
+    font-size: 12px;
+    /* float: left; */
+}
+.shop_bottom strong em {
+    font-style: normal;
+    color: #ff4400;
+    font-size: 18px;
+    /* float: left; */
+
+}
+.shop_bottom .txt2 {
+    font-size: 12px;
+    /* float: left; */
+
+}
+.shop_bottom .txt3 {
+    display: inline-block;
+    font-size: 12px;
+    padding-left: 40px;
+    /* float: left; */
+
+}
+.shop_bottom .price {
+    font-size: 22px;
+    color: #ff4400;
+    font-style: normal;
+    font-weight: 700;
+    padding-left: 10px;
+    display: inline-block;
+
+    /* float: left; */
+
+}
+.shop_bottom .end {
+    width: 125px;
+    height: 50px;
+    background-color: #b0b0b0;
+    display: inline-block;
+    vertical-align: top;
+    /* float: left; */
+}
+.shop_bottom .set {
+    padding-left: 0;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
